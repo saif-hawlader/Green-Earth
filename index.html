@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +41,28 @@
 
     </header>
 
-    <main>
+
+
+        <div class="main-container flex min-h-screen p-6 gap-6 ">
+            <aside class="w-64 bg-white rounded-lg shadow-md p-4">
+                <h2 class="text-xl font-semibold mb-4">Categories</h2>
+                <div id="categories" class="space-y-2"></div>
+            </aside>
+
+            <main class="flex-1 bg-white rounded-lg shadow-md p-4">
+                <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            </main>
+
+            <aside class="w-72 bg-white rounded-lg shadow-md p-4 flex flex-col">
+                <h2 class="text-xl font-bold mb-4">🛒 Cart</h2>
+            </aside>
+        </div>
+
+
+
+
+
+
 
 
 
@@ -119,7 +141,6 @@
             </div>
             <section>
 
-    </main>
 
 
 
@@ -128,7 +149,7 @@
     </footer>
 
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
